@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     # Crucial: Tells GitHub to run this job on your specific VM
-    runs-on: [self-hosted, playwright-vm]
+    runs-on: playwright-vm
 
     steps:
       - name: Checkout Code
