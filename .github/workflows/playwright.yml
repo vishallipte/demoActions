@@ -28,7 +28,7 @@ jobs:
 
       - name: Install Playwright Browsers
         # Since this is a persistent VM, it will reuse installed browsers.
-        # This command will only download them if they are missing or outdated.
+        # This command will only download them if they are missing or outdated..
         run: npx playwright install --with-deps
 
       - name: Run Playwright Tests
