@@ -1,12 +1,12 @@
 name: Test Connection to Windows VM
 
 on:
-  workflow_dispatch: # This allows you to trigger it manually from the GitHub Actions UI
+  push:  # This allows you to trigger it manually from the GitHub Actions UI
 
 jobs:
   ping-vm:
     # Targets your specific Windows Server VM via the label you created
-    runs-on: [self-hosted]
+    runs-on: test
 
     steps:
       - name: Print Welcome Message
