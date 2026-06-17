@@ -6,7 +6,7 @@ on:
 jobs:
   ping-vm:
     # Targets your specific Windows Server VM via the label you created
-    runs-on: [self-hosted, windows-playwright-vm]
+    runs-on: [self-hosted,playwright-vm]
 
     steps:
       - name: Print Welcome Message
